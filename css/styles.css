@@ -42,3 +42,15 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+.modal {
+  width: 800px;
+
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.modal__img {
+  height: 100%;
+  width: 100%;
+}
