@@ -32,16 +32,11 @@ refs.galleryUlRef.addEventListener("click", onGalleryHandle);
 
 //lightbox
 
-const instance = new SimpleLightbox(".gallery a");
-instance.on("error.simplelightbox", function (e) {
-  console.log(e); // some usefull information
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+  scrollZoom: false,
 });
-
-// const lightbox = new SimpleLightbox(".gallery a", {
-//   captionsData: "alt",
-//   captionDelay: 250,
-//   scrollZoom: false,
-// });
 
 // lightbox.on("shown.simplelightbox", function () {
 //   refs.body.classList.add("disable-scroll");
